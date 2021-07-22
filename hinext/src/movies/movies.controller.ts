@@ -34,9 +34,6 @@ export class MoviesController {
 
     @Patch("/:id") // patch는 리소스의 일부분만 업데이트 해준다. 
     patch(@Param('id') movieId: string, @Body() updateData) {
-        return {
-            updataedMovie: movieId, 
-            ...updateData,
-        }
+        return this.moviesService.update(movieId, updateData);
     }
 }
