@@ -12,3 +12,6 @@
 #2.2 Single-responsibility principle 원칙에 따라 작업을 해야한다. 이 것은 하나의 module, class 혹은 function이 꼭 하나의 기능만을 수행해야 하는 것이다. 
      nest g s 를 통해서 서비스를 만들 수 있음.  이렇게 하면 자동으로 프로바이더에 import 시켜줌.
      entities 폴더의 entities 파일들은 서비스로 보내고 받을 클래스(인터페이스)를 export 하는 부분이다. 
+
+#2.4 updateData랑 movieData한테 타입을 부여하기 위해서 서비스랑 콘트롤러에 DTO(데이터 전송 객체)를 만들어야 한다. 
+     dto는 타입을 정의해놓는 것이다. 
