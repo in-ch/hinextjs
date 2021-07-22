@@ -17,3 +17,5 @@
      dto는 타입을 정의해놓는 것이다. 
 
 #2.5 PartialType는 인자값으로 기본 틀이되는 것을 요구한다. 
+
+2.7 추천하진 않지만 @Req, @Res 등의 decorator를 통해 express에 접근이 가능하다.
