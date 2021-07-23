@@ -24,7 +24,7 @@ export class MoviesController {
         return this.moviesService.getOne(movieId)
     }
 
-    @Post() 
+    @Post("/create") 
     create(@Body() movieData: CreateMovieDto) {
         return this.moviesService.create(movieData);
     }
